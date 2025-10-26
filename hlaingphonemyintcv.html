@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curriculum Vitae — ICT Internship</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#6f9fc0; /* header blue */
+      --dark:#33363a; /* left panel dark */
+      --muted:#777;
+      --paper:#fff;
+      --max-width:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Open Sans',system-ui,Arial,sans-serif;background:#f4f6f8;color:#222}
+    .cv-wrap{max-width:var(--max-width);margin:28px auto;background:var(--paper);display:grid;grid-template-columns:360px 1fr;box-shadow:0 10px 30px rgba(10,10,10,0.08);border-radius:6px;overflow:hidden}
+
+    /* top header band that crosses both columns */
+    .header-band{grid-column:1/3;background:var(--blue);padding:36px 40px 20px;color:rgba(255,255,255,0.98);display:flex;align-items:end}
+    .header-band .name{font-family:'Montserrat',sans-serif;font-size:36px;letter-spacing:1px;margin:0}
+    .header-band .role{font-size:16px;margin-left:18px;opacity:0.95}
+
+    /* left sidebar */
+    /* ===== Left Sidebar Layout ===== */
+/* ===== Left Sidebar Layout ===== */
+.left {
+  background: var(--dark);
+  color: #fff;
+  padding: 36px 28px 48px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== Profile Photo ===== */
+.photo {
+  width: 100%;
+  max-width: 230px;
+  aspect-ratio: auto;          /* standard portrait ratio */
+  background: none;             /* no color fill */
+  border-radius: 6px;           /* subtle rounded edges */
+  overflow: hidden;
+  margin-top: 14px;
+  border: 2px solid #fff;       /* simple thin white border */
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;          /* show full head */
+  object-position: center top;  /* align face towards top */
+  display: block;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .left {
+    padding: 28px 20px 36px;
+  }
+
+  .photo {
+    max-width: 180px;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo {
+    max-width: 150px;
+    margin-top: 10px;
+  }
+}
+
+
+
+    .contact{margin-top:22px;color:#d8d8d8;font-size:14px;line-height:1.9}
+    .contact .item{display:flex;gap:10px;align-items:center}
+    .contact svg{width:16px;height:16px;opacity:0.9}
+
+    .section-title{margin-top:30px;color:#fff;font-weight:700;letter-spacing:0.6px}
+    .muted-line{height:2px;background:rgba(255,255,255,0.06);margin:10px 0 18px}
+
+    .education .edu-item{margin-bottom:18px}
+    .edu-item .degree{font-weight:700}
+    .edu-item .meta{color:#cfcfcf;font-size:13px;margin-top:4px}
+
+  .skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  padding: 6px 0;
+  color: #d8d8d8;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+    /* right content */
+    .right{padding:28px 44px 48px}
+    .about{margin-top:14px}
+    h3{margin:8px 0 12px;font-family:'Montserrat',sans-serif}
+    .rule{height:2px;background:#e6e6e6;margin:10px 0 18px}
+    p.lead{color:var(--muted);line-height:1.6}
+
+    .work-item{display:grid;grid-template-columns:1fr 110px;gap:10px;padding:18px 0;border-bottom:1px solid #f0f0f0}
+    .work-item .meta{font-weight:600;color:#111}
+    .work-item .period{font-weight:700;color:var(--muted);text-align:right}
+    .work-item p{color:var(--muted);margin:8px 0 0;font-size:14px}
+
+    .languages{display:flex;gap:26px;margin-top:10px}
+    .languages .lang{display:flex;align-items:center;gap:10px;color:var(--muted);font-weight:600}
+
+    .refs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+    .ref-card{padding:10px}
+    .ref-card .name{font-weight:700}
+    .ref-card .role{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .cv-wrap{grid-template-columns:1fr;max-width:720px}
+      .header-band{padding:18px}
+      .left{order:2;padding:22px}
+      .right{order:3;padding:22px}
+      .photo{width:140px;height:180px;margin:0}
+      .header-band{grid-column:1/2}
+    }
+
+    @media (max-width:480px){
+      .header-band .name{font-size:28px}
+      .header-band .role{font-size:14px}
+    }
+
+    /* print-friendly tweaks */
+    @media print{
+      body{background:#fff}
+      .cv-wrap{box-shadow:none}
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="cv-wrap">
+    <div class="header-band">
+      <div>
+        <h1 class="name">HLAING PHONE MYINT</h1>
+        <div class="role">Fullstack Developer</div>
+      </div>
+    </div>
+
+    <aside class="left">
+      <div class="photo" aria-hidden="true">
+        <!-- Replace with student's photo -->
+        <img src="IMG_7695.JPG" alt="Profile Photo">
+      </div>
+
+      <div class="contact">
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8v13a1 1 0 0 0 1 1h6"/><path d="M21 15v-6a2 2 0 0 0-2-2h-6l-3-3H5a2 2 0 0 0-2 2v12"/></svg><span>(+66)09-48013665</span></div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H4z"/><path d="M22 6l-10 7L2 6"/></svg><span>hlaingphonemyint124@gmail.com</span></div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg><span>https://github.com/hlaingphonemyint124</span></div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 11-9 11S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Mueang Pathum Thani,Thailand</span></div>
+      </div>
+
+      <h4 class="section-title">EDUCATION</h4>
+      <div class="muted-line"></div>
+      <div class="education">
+        <div class="edu-item">
+          <div class="degree">Bachelor of Science in Information and Communication Technology </div>
+          <div class="meta">Rangsit Univertsity,Thailand — Expected Graduation :2026</div>
+        </div>
+       
+
+      <h4 class="section-title">SKILLS</h4>
+      <div class="muted-line"></div>
+      <div class="skills">
+        <ul>
+          <li><span class="dot"></span>HTML / CSS / JavaScript/ React.js</li>
+          <li><span class="dot"></span>Tailwind CSS / Bootstrap / Material UI</li>
+          <li><span class="dot"></span>Python / SQL /MySQL /</li>
+          <li><span class="dot"></span>Node.js / Authentication / CRUD Operations / MVC Architecture</li>
+          <li><span class="dot"></span>Git / GitHub (Version Control) / VS Code / Figma </li>
+        </ul>
+      </div>
+
+    <section>
+  <h4 class="section-title">LANGUAGES</h4>
+  ENGLISH, MYANMAR, THAI (BASIC)
+</section>
+
+
+
+    </aside>
+
+    <main class="right">
+      <section class="about">
+        <h3>ABOUT ME</h3>
+        <div class="rule"></div>
+        <p class="lead">Enthusiastic ICT student specializing in front-end and full-stack development. Proficient in HTML, CSS, JavaScript, React.js, and Node.js with solid experience using Tailwind CSS, Bootstrap, and Material UI for modern UI design. Skilled in Python, SQL, and database-driven applications, with strong knowledge of CRUD operations, authentication, and MVC architecture. Motivated to contribute to dynamic development teams and grow through practical internship experience.</p>
+      </section>
+
+      
+<section class="experience" style="margin-top:22px">
+  <h3>ACADEMIC Project</h3>
+  <div class="rule"></div>
+
+  <div class="work-item">
+    <div>
+      <div class="meta">Pet Management System</div>
+      <div class="meta" style="font-weight:600;color:var(--muted)">ASP.NET MVC Web Application</div>
+      <p>
+        <ul>
+          <li>Built a responsive web app for managing pet records using ASP.NET MVC, C#, SQL Server, and Bootstrap.</li>
+          <li>Implemented CRUD features for pet and user management with a clean, modular architecture.</li>
+          <li>Gained hands-on experience in web development, database design, and user interface implementation.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="period"></div>
+  </div>
+
+  <div class="work-item">
+    <div>
+      <div class="meta">Student Web API</div>
+      <div class="meta" style="font-weight:600;color:var(--muted)">ASP.NET Core · C# · Entity Framework · SQL Server · Swagger · Postman</div>
+      <p>
+        <ul>
+          <li>Developed a RESTful Web API to manage student records with CRUD functionality.</li>
+          <li>Designed database schema using Entity Framework Code-First approach.</li>
+          <li>Implemented API controllers, data validation, and exception handling.</li>
+          <li>Tested and documented endpoints using Swagger UI and Postman. </li>
+        </ul>
+      </p>
+    </div>
+    <div class="period"></div>
+  </div>
+
+  <div class="work-item" style="border-bottom:none">
+    <div>
+      <div class="meta">Craftman Food Website</div>
+      <div class="meta" style="font-weight:600;color:var(--muted)">HTML · CSS · JavaScript · MySQL · Responsive Design</div>
+      <p>
+        <ul>
+          <li>Designed a user-friendly front-end interface using HTML, CSS, and JavaScript.</li>
+          <li>Built responsive layouts with smooth animations and modern UI styling.</li>
+          <li>Developed category and product pages for food listings.</li>
+          <li>Integrated ordering and contact form functionality using PHP and MySQL.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="period"></div>
+  </div>
+</section>
+
+
+  <div class="work-item" style="border-bottom:none">
+    <div>
+      <div class="meta">Hotel Management DashBoard</div>
+      <div class="meta" style="font-weight:600;color:var(--muted)">React.js, Recharts/Chart.js, JavaScript, HTML, CSS, REST APIs, Vercel</div>
+      <p>
+        <ul>
+          <li>Built dynamic and responsive dashboards using React.js.</li>
+          <li>Implemented interactive charts and data visualization with Recharts / Chart.js.</li>
+          <li>Enabled filtering, sorting, and drill-down features for detailed analysis.</li>
+          <li>Integrated API-based data fetching for live updates.</li>
+          <li>Focused on user-friendly UI/UX with clean, modern design.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="period"></div>
+  </div>
+</section>
+
+
+      
+     
+
+    </main>
+  </div>
+</body>
+</html>
