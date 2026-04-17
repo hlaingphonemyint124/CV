@@ -20,7 +20,7 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#home" class="nav-logo">HPM<span class="blink">_</span></a>
-    <button class="hbg" id="hbg" aria-label="Menu">
+    <button class="hbg" id="hbg" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="nl">
@@ -33,14 +33,41 @@
   </div>
 </nav>
 
+<!-- MOBILE MENU PANEL -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mm-backdrop" id="mmBackdrop"></div>
+  <div class="mm-panel" role="dialog" aria-label="Navigation menu">
+    <div class="mm-header">
+      <span class="mm-logo">HPM<span class="accent">_</span></span>
+      <button class="mm-close" id="mmClose" aria-label="Close menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mm-nav">
+      <a href="#home"     class="mm-link" data-s="home">Home <span class="mm-link-arr">→</span></a>
+      <a href="#about"    class="mm-link" data-s="about">About <span class="mm-link-arr">→</span></a>
+      <a href="#projects" class="mm-link" data-s="projects">Projects <span class="mm-link-arr">→</span></a>
+      <a href="#skills"   class="mm-link" data-s="skills">Skills <span class="mm-link-arr">→</span></a>
+      <a href="#contact"  class="mm-link" data-s="contact">Contact <span class="mm-link-arr">→</span></a>
+    </nav>
+    <div class="mm-footer">
+      <div class="mm-status">
+        <span class="mm-dot"></span>
+        Available for work · Bangkok, TH
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- HERO -->
 <section id="home" class="hero">
   <div class="hero-content">
-    <div class="badge"><span class="bdot"></span>Available for work · Bangkok, TH</div>
     <h1 class="hname">
-      <span class="nl-red glitch" data-text="HLAING">HLAING</span>
-      <span class="nl-wh glitch"  data-text="PHONE">PHONE</span>
-      <span class="nl-red glitch" data-text="MYINT">MYINT</span>
+      <span class="nl-glow">HLAING</span>
+      <span class="nl-glow">PHONE</span>
+      <span class="nl-glow">MYINT</span>
     </h1>
     <p class="hrole">// Fullstack Developer</p>
     <p class="hdesc">Building performant web apps with React, Node.js &amp; Python. 3+ years crafting clean, scalable systems that actually ship.</p>
@@ -52,7 +79,6 @@
       <span>React</span><span>Node.js</span><span>Python</span><span>Supabase</span><span>SQL</span>
     </div>
   </div>
-  <!-- TERMINAL -->
   <div class="term">
     <div class="tbar">
       <span class="tb tb-r"></span><span class="tb tb-y"></span><span class="tb tb-g"></span>
@@ -129,7 +155,6 @@
       <h2 class="sec-ttl">Projects</h2>
     </div>
     <div class="pgrid">
-
       <div class="pcard rev">
         <div class="ptop">
           <span class="pnum">01</span>
@@ -149,7 +174,6 @@
           <span class="tag">TypeScript</span><span class="tag">Tailwind</span>
         </div>
       </div>
-
       <div class="pcard ft rev">
         <div class="ptop">
           <span class="pnum">02</span>
@@ -170,7 +194,6 @@
           <span class="tag">Node.js</span><span class="tag">MongoDB</span>
         </div>
       </div>
-
       <div class="pcard rev">
         <div class="ptop">
           <span class="pnum">03</span>
@@ -190,7 +213,6 @@
           <span class="tag">SQL Server</span><span class="tag">Bootstrap</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -283,7 +305,6 @@
           </a>
         </div>
       </div>
-
       <div class="cv-card rev">
         <div class="cv-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
