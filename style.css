@@ -181,8 +181,19 @@ a{text-decoration:none;color:inherit;}
   padding:calc(var(--nav) + 4rem) 2rem 4rem;
   max-width:1200px;margin:0 auto;position:relative;z-index:2;
 }
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;
+  color:var(--w60);border:1px solid var(--border-red);background:var(--red-faint);
+  padding:6px 14px;border-radius:20px;margin-bottom:1.5rem;
+}
+.bdot{
+  width:6px;height:6px;background:var(--red);border-radius:50%;flex-shrink:0;
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--red-glow)}50%{box-shadow:0 0 0 8px transparent}}
 
-/* NAME — red glow effect */
+/* NAME — all white with glow effect */
 .hname{
   display:flex;flex-direction:column;
   font-size:clamp(3rem,6vw,6.5rem);font-weight:800;
@@ -195,19 +206,17 @@ a{text-decoration:none;color:inherit;}
 .nl-glow:nth-child(1){animation-delay:0s;}
 .nl-glow:nth-child(2){animation-delay:1.6s;}
 .nl-glow:nth-child(3){animation-delay:3.2s;}
-
-/* Changed from white glow to red glow */
 @keyframes nameGlow{
   0%{
     text-shadow:
-      0 0 15px rgba(232,0,13,0.2),
+      0 0 15px rgba(255,255,255,0.15),
       0 2px 8px rgba(0,0,0,0.9);
   }
   100%{
     text-shadow:
-      0 0 30px rgba(232,0,13,0.8),
-      0 0 80px rgba(232,0,13,0.45),
-      0 0 140px rgba(232,0,13,0.2),
+      0 0 30px rgba(255,255,255,0.5),
+      0 0 80px rgba(255,255,255,0.2),
+      0 0 140px rgba(232,0,13,0.1),
       0 2px 8px rgba(0,0,0,0.6);
   }
 }
